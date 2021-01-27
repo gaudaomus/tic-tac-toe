@@ -1,0 +1,73 @@
+.display {
+  width: 30vh;
+  height: 10vh;
+  position: relative;
+  display: flex;
+  left: 50%;
+  top: 5vh;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.board {
+  height: 50vh;
+  width: 50vh;
+  position: relative;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template:
+    "upL upM upR"
+    "midL midM midR"
+    "botL botM botR";
+  }
+
+.square{
+  display: flex;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  min-width: calc(50vh/3);
+  line-height: 0;
+}
+
+.upL{
+  border-width: 0px 2px 2px 0px;
+}
+
+.upM{
+  border-width: 0px 2px 2px 2px;
+}
+
+.upR{
+  border-width: 0px 0px 2px 2px;
+}
+
+.midL{
+  border-width: 2px 2px 2px 0px;
+}
+
+.midM{
+  border-width: 2px 2px 2px 2px;
+}
+
+.midR{
+  border-width: 2px 0px 2px 2px;
+}
+
+.botL{
+  border-width: 2px 2px 0px 0px;
+}
+
+.botM{
+  border-width: 2px 2px 0px 2px;
+}
+
+.botR{
+  border-width: 2px 0px 0px 2px;
+}
